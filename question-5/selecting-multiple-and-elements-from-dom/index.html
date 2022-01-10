@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting Elements from the dom</title>
+</head>
+<body>
+    <h1>Selecting elements from the DOM. Look in the console.</h1>
+
+    <h2>Selecting an ID</h2>
+
+    <div id="demo">
+        We get the ID by using: document.getElementById("demo");
+    </div>
+    <br>
+    <br><br>
+
+<h2>Selecting a CLASS</h2>
+    <div class="intro">
+        We get the CLASS by using: document.getElementsByClass("intro");
+    </div>
+        <br>
+    <br><br>
+
+    <h2>Getting elements with tag</h2>
+    <p>Finding HTML elements by Tag Name.</p>
+    <p>This example demonstrates the <b>getElementsByTagName</b> method. Here we're grabbing the BODY tag. We use the document.getElementsByTagName("body");</p>
+     
+    <br>
+    <br><br>
+
+    <!--Selecting multiple items in the dom-->
+      <div id="parent">
+        <h2>Selecting multiple DOM elements</h2>
+        <div>
+        <h3 class="child">A heading with the child class</h3>
+        <p class="child">This is a p-tag with child class</p>
+        <a href="#" class="child">This is an anchor-tag with child class</a> 
+        </div>
+        <p>We get them by using: document.querySelectorAll(".child");</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
